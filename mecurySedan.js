@@ -26,17 +26,19 @@ loadPassenger(num)
         return this.availableRoom == true;
         console.log("there is available room!!!");
     } 
+    
     else {
         return this.availableRoom == false;
         console.log("no available room");
     }
-   
-    start()
+
+   start()
     if (this.fuel > 0) {
     return this.start == true;
     console.log("start-there is fuel");
         } 
-else {
+    
+    else {
     return this.start == false;
     console.log("no fuel to start");
     }      
@@ -46,7 +48,8 @@ scheduleService(mileage)
     return this.timeforMaintenance == true;
     console.log("mileage greater than 30000(time for maintenance)");
         } 
-else {
+    
+    else {
     return this.timeforMaintenance == false;
     console.log("mileage less than 30000(time for maintenance)");
     }       
