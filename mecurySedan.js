@@ -9,12 +9,15 @@ console.log(v.make)
 class Sedan extends Vehicle { 
     constructor(make, model, year, color, mileage, maximumPassengers, passenger, numberOfWheels, maximumSpeed, fuel, scheduleService) {
     super(make, model, year, color, mileage);
-    this.maximumPassengers;
-    this.passenger;
-    this.numberOfWheels;
-    this.maximumSpeed;
-    this.fuel;
-    this.scheduleService;
+    this.maximumPassengers = 6;
+    this.passenger = 0;
+    this.numberOfWheels = 4;
+    this.maximumSpeed = 200;
+    this.fuel = 100;
+    this.scheduleService = false;
+    this.start = false;
+    this.availableRoom = false;
+    this.timeforMaintenance = false;
     }
 }
 
@@ -37,16 +40,14 @@ else {
     return this.start == false;
     console.log("no fuel to start");
     }      
-
-
-     
+  
 scheduleService(mileage) 
     if (this.mileage > 30000) {
-    return this.timeformaintenance == true;
+    return this.timeforMaintenance == true;
     console.log("mileage greater than 30000(time for maintenance)");
         } 
 else {
-    return this.timeformaintenance == false;
+    return this.timeforMaintenance == false;
     console.log("mileage less than 30000(time for maintenance)");
     }       
 
